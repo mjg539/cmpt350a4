@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<title>350 A4 jQuery</title>
+	</head>
+
+	<body>
+		<h1>Post Messages</h1>
+		<p>
+			Message:<br>
+			<input type="text" name="message"><br>
+			ID:<br>
+			<input type="text" name="id"><br>
+			<button onclick="Submit()"> Submit </button>
+			<br><br>
+		</p>
+		<h1> Retrieve Messages</h1>
+		<p>
+			<button onclick="RetrieveAll()"> Retrieve All </button>
+			<button onclick="RetrieveNew()"> Retrieve New </button>
+			<button onclick="RetrieveRelated()"> Retrieve by ID </button>
+			<button onclick="RetrieveNotRelated()"> Retrieve by not ID </button>
+		</p>
+		<div id=messages class="panel panel-default">
+	  		<div class="panel-body">A Basic Panel</div>
+		</div>
+
+	</body>
+
+
+		<!--script src="a4/jquery/jquery.js"></script-->
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<script>
+			$(document).ready(function(){
+				$('#messages');
+			});
+		</script>
+
+		<style>
+		h1{
+			margin-left:12px;
+		}
+		p{
+			margin-left:20px;
+		}
+		</style>
+	
+
+</html>
